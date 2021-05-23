@@ -15,7 +15,10 @@ body {
 	position: relative;
 }
 
-body {}
+body {
+	font-family: 'ProximaNova', sans-serif;
+	font-weight: normal;
+}
 
 ul,
 ol,
@@ -67,4 +70,16 @@ button {
 
 .--align-end {
 	align-items: flex-end;
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.container-flyid {
+	padding: 0 15px;
+	max-width: 975px;
+	margin: 0 auto;
 }

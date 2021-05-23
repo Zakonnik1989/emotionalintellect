@@ -37,18 +37,18 @@ const css_plugins = [
 ];
 
 let settings_size = {
-		'gzip': true,
-		'pretty': true,
-		'showFiles': true,
-		'showTotal': true
-	},
+	'gzip': true,
+	'pretty': true,
+	'showFiles': true,
+	'showTotal': true
+},
 	svgmin_plugins = {
 		plugins: [{
-				removeComments: true
-			},
-			{
-				removeEmptyContainers: true
-			}
+			removeComments: true
+		},
+		{
+			removeEmptyContainers: true
+		}
 		]
 	},
 	connect = ftp.create({
@@ -227,10 +227,10 @@ gulp.task('img', () => {
 	return gulp
 		.src('src/img/**/*.+(png|jpg|jpeg|gif|svg|ico|webp)')
 		.pipe(imagemin({
-				interlaced: true,
-				progressive: true,
-				optimizationLevel: 5,
-			},
+			interlaced: true,
+			progressive: true,
+			optimizationLevel: 5,
+		},
 			[
 				recompress({
 					loops: 6,
@@ -246,7 +246,7 @@ gulp.task('img', () => {
 				imagemin.gifsicle(),
 				imagemin.optipng(),
 				imagemin.svgo()
-			], ), )
+			]))
 		.pipe(gulp.dest('build/img'))
 		.pipe(size(settings_size))
 		.pipe(bs.stream())
@@ -292,7 +292,7 @@ gulp.task('font-eot', () => {
 		.pipe(gulp.dest('build/fonts/'))
 });
 
-const cb = () => {}
+const cb = () => { }
 
 let srcFonts = 'src/scss/_local-fonts.scss';
 let appFonts = 'build/fonts/';
@@ -341,7 +341,7 @@ gulp.task('server_html', () => {
 		browser: 'chrome',
 		logPrefix: 'BS-HTML:',
 		logLevel: 'info',
-		open: false
+		open: true,
 	})
 });
 

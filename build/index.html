@@ -3,29 +3,435 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-				content="Easy webdev startpack by budfy">
-	<meta name="keywords"
-				content="Webdev, Gulp4, html, css, js, jquery">
-	<link rel="shortcut icon"
-				href="img/favicon.png"
-				type="image/x-icon">
-	<link rel="stylesheet"
-				href="css/libs.min.css">
-	<link rel="stylesheet"
-				href="css/style.min.css">
-	<title>Easy webdev startpack - test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Easy webdev startpack by budfy">
+	<meta name="keywords" content="Webdev, Gulp4, html, css, js, jquery">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>emotionalintellect</title>
 </head>
 
 <body>
-	<header class="header"></header>
+	<header class="header">
+
+   <div class="header-top">
+      <div class="container">
+         <div class="header-inner">
+
+            <div class="header-logo">
+               <img class="header-logo__img1" src="img/ШБ_рус.png" alt="Синергия школа бизнеса">
+               <img class="header-logo__img" src="img/Synergy.png" alt="Synergy">
+            </div>
+
+            <div class="header-telephone">
+               <img class="header-telephone__img" src="img/phone call.png" alt="telephone">
+               <a class="header-telephone__numb" href="tel:+7(495)7878767">+7(495) 787 87 67</a>
+               <a class="header-telephone__Check" href="#">Регистрация</a>
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+   <div class="header-bottom">
+      <div class="container">
+         <nav class="header-bottom__nav">
+            <ul class="header-bottom__li">
+               <li class="header-bottom__item"><a class="header-bottom__link" href="#info">О программе</a></li>
+               <li class="header-bottom__item"><a class="header-bottom__link" href="#spek">О спикере</a></li>
+               <li class="header-bottom__item3"><a class="header-bottom__link3" href="#organizer">Организатор</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+
+</header>
 	<main class="main">
+		<section class="hero" style="background-image: url(img/bg.png);">
+   <div class="hero-inner">
+
+      <div class="container">
+
+         <div class="hero-top">
+            <p class="hero-text">20 мая 2021 <span class="hero-span"></span> начало в 18:30</p>
+         </div>
+         <div class="hero-bottom">
+            <h2 class="hero-text__subtitle">Бесплатный вебинар</h2>
+            <h1 class="hero-text__sub">Александр Фридман</h1>
+            <p class="subtext">Лидерство – мифы и рифы</p>
+            <img class="hero-img" src="img/Fridman.png" alt="Fridman">
+         </div>
+         <form class="form" action="">
+            <div class="container">
+               <h2 class="form__title">Записаться на вебинар</h2>
+               <div class="form-input">
+
+                  <label for="name"></label>
+                  <input class="form__name" type="text" id="name" name="name" placeholder="Ваше имя">
+
+                  <label for="phone"></label>
+                  <input class="form__phone" type="tel" id="phone" name="phone" placeholder="Телефон"
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                  <label for="email"></label>
+                  <input class="form__email" type="email" id="email" placeholder="Email" pattern=".+@globex.com"
+                     required>
+
+                  <button class="form-btn" type="submit">записаться</button>
+
+               </div>
+               <div>
+                  <input class="custom-checkbox" type="checkbox" id="consent" name="subscribe" value="newsletter">
+                  <label class="form-check" for="consent">СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ, ПОЛУЧЕНИЕ РАССЫЛОК,
+                     А ТАКЖЕ
+                     СПОЛИТИКОЙКОНФИДЕНЦИАЛЬНОСТИ</label>
+               </div>
+            </div>
+         </form>
+      </div>
+
+
+
+   </div>
+
+
+
+</section>
+		<section id="info" class="info">
+   <div class="container-flyid ">
+
+      <h3 class="info__title">О вебинаре</h3>
+      <p class="info__subtitle">Власть руководителя должна быть легитимной, что невозможно без авторитета. Один из
+         способов этот авторитет завоевать – грамотно использовать свои лидерские компетенции.</p>
+      <p class="info__subtext">
+         С учётом того, что термин «лидерство» один из самых размытых в менеджменте, нужно не надеяться на «сакральные»
+         эффекты, а хорошо понимать возможные подходы и уместность их использования на реальных рабочих ситуациях.
+      </p>
+
+      <h3 class="info-titlemid">На вебинаре Вы узнаете:</h3>
+      <ul class="info__list">
+         <li class="info__item">Кто лучше – лидер или менеджер – и нужно ли их противопоставлять;</li>
+         <li class="info__item">Что может быть эффективнее административного влияния;
+         </li>
+         <li class="info__item">От чего зависит значимость лидерства;</li>
+         <li class="info__item">Нужно ли лидеру проявлять свои негативные черты.</li>
+      </ul>
+      <a class="info__button" href="#">ЗАПИСАТЬСЯ</a>
+      <h3 class="info__titlebot">Кому полезен вебинар:</h3>
+      <ul class="info-bottom__list">
+         <li class="info-bottom__item">Мидл-менеджерам</li>
+         <li class="info-bottom__item">ТОПам;</li>
+         <li class="info-bottom__item">Первым Лицам;</li>
+         <li class="info-bottom__item">Собственникам.</li>
+      </ul>
+      <a class="info__btn" href="#">ЗАПИСАТЬСЯ</a>
+   </div>
+</section>
+		<section id="spek" class="Consultant" style="background-image: url(img/bg2.png);">
+   <div class="container">
+
+      <div class="Consultant__inner">
+         <h2 class="consultant__title">Александр Фридман</h2>
+         <ul class="consultant__list">
+            <li class="consultant__item">Консультант и бизнес-тренер.</li>
+            <li class="consultant__item">Управляющий партнёр консалдинговой компании Amadeus Group,Рига,Латвия.</li>
+            <li class="consultant__item">Автор 15 учебных видеосеминаров и 12 аудиосеминаров</li>
+         </ul>
+         <a class="consultant__link" href="#">Подробнее о спикере</a>
+         <img class="consultant__img" src="img/Fridman2.png" alt="Fridman">
+      </div>
+
+   </div>
+</section>
+		<section class="speaker">
+   <div class="container">
+
+      <form class="speaker-Form" action="">
+         <div class="container">
+            <h2 class="speaker__title">Записаться на вебинар</h2>
+            <div class="speaker-input">
+
+               <label for="name1"></label>
+               <input class="speaker__name" type="text" id="name1" name="name" placeholder="Ваше имя">
+
+               <label for="phone1"></label>
+               <input class="speaker__phone" type="tel" id="phone1" name="phone" placeholder="Телефон"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+               <label for="email"></label>
+               <input class="speaker__email" type="email" id="email" placeholder="Email" pattern=".+@globex.com"
+                  required>
+
+               <button class="speaker-btn" type="submit">записаться</button>
+
+            </div>
+            <div>
+               <input class="custom-checkbox" type="checkbox" id="forma" name="subscribe" value="newsletter">
+               <label class="form-check" for="forma">СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ, ПОЛУЧЕНИЕ РАССЫЛОК,
+                  А ТАКЖЕ
+                  СПОЛИТИКОЙКОНФИДЕНЦИАЛЬНОСТИ</label>
+            </div>
+         </div>
+      </form>
+
+   </div>
+</section>
+		<section id="organizer" class="Organizer">
+   <div class="container">
+
+      <div class="Organizer-top">
+         <h2 class="Organizer-top__title">Организатор</h2>
+         <img src="img/Synergy2.png" alt="Synergy">
+      </div>
+
+      <div class="Organizer-bot">
+
+         <div class="Organizer-left__text">Школа бизнеса «Синергия» была основана
+            в 1988 году и является первой бизнес-школойв России и СНГ. На базе школы проводится обучение по программам
+            МВА и профессиональной переподготовки, семинары и тренинги ведущих российских и мировых экспертов.
+         </div>
+
+         <div class="Organizer-right">
+
+            <div class="Organizer-righttop">
+               <div class="Organizer-box">
+                  <h4 class="Organizer-box__title">50 000</h4>
+                  <p class="Organizer-box__text">успешных выпускников</p>
+               </div>
+               <div class="Organizer-box2">
+                  <h4 class="Organizer-box__title">500+</h4>
+                  <p class="Organizer-box__text">профессиональных программ поразвитию бизнеса</p>
+               </div>
+            </div>
+
+            <div class="Organizer-rightbot">
+               <div class="Organizer-box">
+                  <h4 class="Organizer-box__title">30</h4>
+                  <p class="Organizer-box__text">лет на рынке
+                     бизнес-образования</p>
+               </div>
+               <div class="Organizer-box2">
+                  <h4 class="Organizer-box__title">7</h4>
+                  <p class="Organizer-box__text">престижных
+                     аккредитаций AMBA</p>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+</section>
+		<section class="Last" style="background-image: url(img/bg.png);">
+   <div class="last-inner">
+
+      <div class="container">
+
+         <div class="last-top">
+            <p class="last-text">20 мая 2021 <span class="last-span"></span> начало в 18:30</p>
+         </div>
+         <div class="last-bottom">
+            <h2 class="last-text__subtitle">Бесплатный вебинар</h2>
+            <h1 class="last-text__sub">Александр Фридман</h1>
+            <p class="subtext">Лидерство – мифы и рифы</p>
+            <img class="last-img" src="img/Fridman3.png" alt="Fridman">
+         </div>
+      </div>
+   </div>
+</section>
 		<!-- <svg class="include-svg"
 				 src="storm.svg"></svg> -->
 	</main>
-	<footer class="footer"></footer>
+	<footer class="footer">
+   <div class="container">
+
+      <div class="footer-inner">
+         <div class="footer-img">
+            <img src="img/logo3.png" alt="logo" class="footer-img__left">
+            <img src="img/synergy3.png" alt="synergy" class="footer-img__right">
+         </div>
+
+         <div class="footer-connection">
+            <img src="img/phone call.png" alt="phone" class="footer-connection__phone">
+            <a href="tel:+7(495)7878767" class="footer-connection__number">+7 (495) 787 87 67</a>
+         </div>
+
+      </div>
+
+      <div class="footer-bot">
+         <div>
+            <p class="footer__text">© 1988 — 2018 Университет «Синергия».</p>
+            <p class="footer__text">Все права защищены.</p>
+         </div>
+         <div>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+            <p class="footer-text__link">Разработано и продвигается —</p><a href="#" class="footer__link1">Synergy
+               Digital</a>
+         </div>
+      </div>
+
+   </div>
+</footer>
+
+	<!-- Display:none -->
+	<div class="">
+   <header class="header">
+
+      <div class="header-top boxy-author">
+         <div class="container">
+            <div class="header-inner">
+
+               <div class="header-logo">
+                  <img class="header-logo__img1" src="img/ШБ_рус.png" alt="Синергия школа бизнеса">
+                  <img class="header-logo__img" src="img/Synergy.png" alt="Synergy">
+               </div>
+
+               <div class="header-telephone">
+                  <img class="header-telephone__img" src="img/phone call.png" alt="telephone">
+                  <a class="header-telephone__numb" href="tel:+7(495)7878767">+7(495) 787 87 67</a>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+   </header>
+
+   <section class="thanks-main boxy-author">
+      <div class="thanks-wrapper">
+         <h2 class="thanks__title">Спасибо! </h2>
+         <p class="thanks__text">Мы скоро свяжемся с Вами!</p>
+      </div>
+   </section>
+
+   <footer class="footer boxy-author">
+      <div class="container">
+
+         <div class="footer-inner">
+            <div class="footer-img">
+               <img src="img/logo3.png" alt="logo" class="footer-img__left">
+               <img src="img/synergy3.png" alt="synergy" class="footer-img__right">
+            </div>
+
+            <div class="footer-connection">
+               <img src="img/phone call.png" alt="phone" class="footer-connection__phone">
+               <a href="tel:+7(495)7878767" class="footer-connection__number">+7 (495) 787 87 67</a>
+            </div>
+
+         </div>
+
+         <div class="footer-bot">
+            <div>
+               <p class="footer__text">© 1988 — 2018 Университет «Синергия».</p>
+               <p class="footer__text">Все права защищены.</p>
+            </div>
+            <div>
+               <a href="#" class="footer__link">Политика конфиденциальности</a>
+               <p class="footer-text__link">Разработано и продвигается —</p><a href="#" class="footer__link1">Synergy
+                  Digital</a>
+            </div>
+         </div>
+
+      </div>
+   </footer>
+</div>
+	<section class="author-description">
+
+   <div class="description-inner">
+      <div class="lefts-form">
+         <form class="left-form" action="">
+            <div class="container">
+               <h2 class="left-form__title">Записаться на программу</h2>
+               <div class="left-box">
+
+                  <label for="name1"></label>
+                  <input class="left-form__name" type="text" id="name1" name="name" placeholder="Ваше имя">
+
+                  <label for="phone1"></label>
+                  <input class="left-form__phone" type="tel" id="phone1" name="phone" placeholder="Телефон"
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                  <label for="email"></label>
+                  <input class="left-form__email" type="email" id="email" placeholder="Email" pattern=".+@globex.com"
+                     required>
+
+                  <input class="custom-checkbox" type="checkbox" id="custom" name="subscribe" value="newsletter">
+                  <label class="form-check left-form__label" for="custom">СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ
+                     ДАННЫХ, ПОЛУЧЕНИЕ
+                     РАССЫЛОК,
+                     А ТАКЖЕ
+                     <a href="https://synergy.ru/lp/_chunk/privacy.php">С ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</a></label>
+
+                  <button class="left-form-btn" type="submit">записаться</button>
+
+               </div>-
+
+            </div>
+         </form>
+
+      </div>
+
+      <div class="author" style="background-image: url(img/bg3.png); max-height: 225px;width: 100%">
+         <h2 class="author__title">Александр Фридман</h2>
+         <div class="author-bot">
+            <div class="box-inner1">
+               <h3 class="description__title">Стаж в профессии — 28 лет</h3>
+               <p class="description__subtitle"> Конкурентное преимущество: единственный эксперт, который закрывает
+                  своими
+                  семинарами все компетенции, необходимые руководителю для профессионального управления сотрудниками.
+               </p>
+            </div>
+            <div class="box-inner">
+               <h3 class="description__title">Авторские программы:</h3>
+               <p class="description__text"> Программа «Homo Boss: Человек Управляющий» (повышение управленческой
+                  квалификации руководителей) - 5 базовых курсов, 16 семинаров;</p>
+               <p class="description__text"> Программа «Короли и Капуста: МАТЧАСТЬ корпоративного управления»
+                  («переподготовка» для Первых Лиц, собственников и генеральных директоров) - три курса, 9 учебных дней;
+               </p>
+            </div>
+            <div class="box-inner">
+               <h3 class="description__title">Экспертная квалификация</h3>
+               <p class="description__text">Внедрение регулярного менеджмента;
+                  Повышение точности корпоративного управления;
+                  Обучение методам профессиональной эксплуатации подчинённых;</p>
+            </div>
+            <div class="box-inner">
+               <h3 class="description__title">Книги</h3>
+               <ul class="description__list">
+                  <li class="description__item">«Вы или Вас: профессиональная эксплуатация подчинённых». Издательство
+                     «Добрая Книга».</li>
+                  <li class="description__item">«Вы или Хаос: профессиональное планирование для регулярного
+                     менеджмента».
+                     Издательство «Добрая Книга».</li>
+                  <li class="description__item"> «Как наказывать подчинённых: за что, для чего, каким образом».
+                     Издательство «Добрая Книга».</li>
+                  <li class="description__item">Соавтор книги «Управление стрессом для делового человека». Издательство
+                     «Добрая Книга».</li>
+                  <li class="description__item">«Пожиратели времени: как избавить от лишней работы себяи сотрудников».
+                     Издательство «Бомбора».</li>
+               </ul>
+            </div>
+            <div class="box-inner">
+               <p class="description__net">Личный сайт:<a class="description__link"
+                     href="www.asfridman.com">www.asfridman.com</a></p>
+               <p class="description__net">Личная страница: <a class="description__link"
+                     href="www.facebook.com/a.s.fridman">www.facebook.com/a.s.fridman</a></p>
+               <p class="description__net">Профессиональная страница:<a class="description__link"
+                     href="https://www.facebook.com/fridman.management/">https://www.facebook.com/fridman.management/</a>
+               </p>
+            </div>
+         </div>
+      </div>
+
+
+
+   </div>
+
+
+</section>
+
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
